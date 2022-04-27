@@ -1,4 +1,5 @@
 import beans.User;
+import com.epam.reportportal.junit5.ReportPortalExtension;
 import com.tngtech.java.junit.dataprovider.DataProvider;
 import com.tngtech.java.junit.dataprovider.DataProviderRunner;
 import com.tngtech.java.junit.dataprovider.UseDataProvider;
@@ -7,10 +8,10 @@ import core.StringHelper;
 import org.junit.Test;
 
 
-import org.junit.jupiter.api.ClassOrderer;
 import org.junit.jupiter.api.MethodOrderer;
 import org.junit.jupiter.api.Order;
 import org.junit.jupiter.api.TestMethodOrder;
+import org.junit.jupiter.api.extension.ExtendWith;
 import org.junit.runner.RunWith;
 import pageobjects.LoginPage;
 
@@ -18,6 +19,7 @@ import static com.codeborne.selenide.Selenide.page;
 
 @RunWith(DataProviderRunner.class)
 @TestMethodOrder(MethodOrderer.OrderAnnotation.class)
+@ExtendWith(ReportPortalExtension.class)
 public class TestLogin extends BaseTestCase {
 
     @DataProvider
