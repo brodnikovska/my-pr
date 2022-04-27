@@ -9,8 +9,7 @@ import lombok.Getter;
 import org.openqa.selenium.support.FindBy;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
-import io.github.bonigarcia.wdm.ChromeDriverManager;
-import io.github.bonigarcia.wdm.FirefoxDriverManager;
+import java.time.Duration;
 
 import static com.codeborne.selenide.Selenide.$x;
 
@@ -48,7 +47,7 @@ public class LoginPage {
     public LoginPage verifyLoginSuccessful() {
         loginButton.shouldNotBe(Condition.exist);
         $x(String.format(LoginPage.getPageMessage(), PageMessages.LOGIN_SUCCESSFUL)).shouldBe(Condition.visible);
-        $x(String.format(LoginPage.getPageMessage(), PageMessages.LOGIN_SUCCESSFUL)).waitUntil(Condition.disappears, 10000, 1000);
+        $x(String.format(LoginPage.getPageMessage(), PageMessages.LOGIN_SUCCESSFUL)).shouldBe(Condition.disappear, Duration.ofMillis(10000));
         logger.info(PageMessages.LOGIN_SUCCESSFUL.toString());
         return this;
     }

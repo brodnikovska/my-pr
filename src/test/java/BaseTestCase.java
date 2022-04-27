@@ -1,19 +1,20 @@
+import com.codeborne.selenide.Configuration;
 import com.codeborne.selenide.WebDriverRunner;
 import com.epam.reportportal.junit5.ReportPortalExtension;
 import core.PropertyController;
-import core.WebDriverWrapper;
-import org.junit.Before;
 import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.extension.ExtendWith;
 
+import static com.codeborne.selenide.Selenide.open;
+
 @ExtendWith(ReportPortalExtension.class)
 public abstract class BaseTestCase {
 
-    @Before
+    @BeforeEach
     public void before() {
-        WebDriverWrapper.setWebDriver(PropertyController.getPropertyByKey("driver"));
-        WebDriverRunner.getWebDriver().navigate().to(PropertyController.getPropertyByKey("base.url"));
+        Configuration.browser = PropertyController.getPropertyByKey("driver");
+        open(PropertyController.getPropertyByKey("base.url"));
     }
 
     @AfterEach
