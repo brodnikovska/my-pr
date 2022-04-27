@@ -15,7 +15,7 @@ import static com.codeborne.selenide.Selenide.page;
 import static org.junit.jupiter.params.provider.Arguments.arguments;
 
 @ExtendWith(ReportPortalExtension.class)
-public class TestLoginTest extends BaseTestCase {
+public class TestLogin extends BaseTestCase {
 
 
     private static Stream<Arguments> validDefaultCredentials() {
