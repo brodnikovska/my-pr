@@ -21,7 +21,7 @@ public class PropertyController {
 
         } else {
             inputStream = Thread.currentThread().getContextClassLoader()
-                    .getResourceAsStream(WEB);
+                    .getResourceAsStream(LOCAL);
             properties.load(inputStream);
         }
         return properties.getProperty(key);
