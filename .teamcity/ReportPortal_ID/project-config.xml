@@ -32,6 +32,13 @@
         <param name="useToken" value="true" />
       </parameters>
     </extension>
+    <extension id="PROJECT_EXT_7" type="ReportTab">
+      <parameters>
+        <param name="startPage" value="index.html" />
+        <param name="title" value="build" />
+        <param name="type" value="BuildReportTab" />
+      </parameters>
+    </extension>
   </project-extensions>
   <cleanup />
 </project>
