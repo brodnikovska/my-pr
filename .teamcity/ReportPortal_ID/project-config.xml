@@ -26,11 +26,10 @@
       <parameters>
         <param name="id" value="b2b29f97-af29-4ecf-a063-542791ee94c6" />
         <param name="jdbcUsername" value="admin" />
-        <param name="login" value="admin" />
-        <param name="name" value="http://localhost:9000/" />
-        <param name="password" value="scrambled:YWRtaW4=" />
+        <param name="name" value="my-pr" />
+        <param name="token" value="scrambled:NzVkMzhmMjM0MTI3MWU2MTU2MGYzZTQ0MmU5ZWIzZjljNGE5YTQ1MQ==" />
         <param name="url" value="http://localhost:9000/" />
-        <param name="useToken" value="false" />
+        <param name="useToken" value="true" />
       </parameters>
     </extension>
   </project-extensions>
