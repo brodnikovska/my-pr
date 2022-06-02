@@ -22,6 +22,23 @@
         <param name="secure:clientSecret" value="credentialsJSON:b2f9d3d3-dd8b-417b-9d0c-c2b45bb7fefb" />
       </parameters>
     </extension>
+    <extension id="PROJECT_EXT_6" type="sonar-qube">
+      <parameters>
+        <param name="id" value="b2b29f97-af29-4ecf-a063-542791ee94c6" />
+        <param name="jdbcUsername" value="admin" />
+        <param name="name" value="my-pr" />
+        <param name="token" value="scrambled:NzVkMzhmMjM0MTI3MWU2MTU2MGYzZTQ0MmU5ZWIzZjljNGE5YTQ1MQ==" />
+        <param name="url" value="http://localhost:9000/" />
+        <param name="useToken" value="true" />
+      </parameters>
+    </extension>
+    <extension id="PROJECT_EXT_7" type="ReportTab">
+      <parameters>
+        <param name="startPage" value="index.html" />
+        <param name="title" value="build" />
+        <param name="type" value="BuildReportTab" />
+      </parameters>
+    </extension>
   </project-extensions>
   <cleanup />
 </project>

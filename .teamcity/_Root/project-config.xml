@@ -30,6 +30,16 @@
         <param name="showChanges" value="false" />
       </parameters>
     </extension>
+    <extension id="PROJECT_EXT_8" type="sonar-qube">
+      <parameters>
+        <param name="id" value="b616beb7-afb3-457b-b0a6-ec225fe39538" />
+        <param name="jdbcUsername" value="admin" />
+        <param name="name" value="mySonar" />
+        <param name="token" value="scrambled:NzVkMzhmMjM0MTI3MWU2MTU2MGYzZTQ0MmU5ZWIzZjljNGE5YTQ1MQ==" />
+        <param name="url" value="http://localhost:9000" />
+        <param name="useToken" value="true" />
+      </parameters>
+    </extension>
   </project-extensions>
   <cleanup>
     <options>
