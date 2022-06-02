@@ -20,17 +20,6 @@
           <param name="userSettingsSelection" value="userSettingsSelection:default" />
         </parameters>
       </runner>
-      <runner id="RUNNER_3" name="" type="Maven2">
-        <parameters>
-          <param name="goals" value="clean test" />
-          <param name="localRepoScope" value="agent" />
-          <param name="maven.path" value="%teamcity.tool.maven.DEFAULT%" />
-          <param name="pomLocation" value="pom.xml" />
-          <param name="runnerArgs" value="-Dmaven.test.failure.ignore=true" />
-          <param name="teamcity.step.mode" value="default" />
-          <param name="userSettingsSelection" value="userSettingsSelection:default" />
-        </parameters>
-      </runner>
       <runner id="RUNNER_2" name="" type="sonar-plugin">
         <parameters>
           <param name="sonarProjectKey" value="%teamcity.project.id%" />
@@ -40,6 +29,17 @@
           <param name="sonarServer" value="b616beb7-afb3-457b-b0a6-ec225fe39538" />
           <param name="teamcity.step.mode" value="default" />
           <param name="teamcity.tool.sonarquberunner" value="%teamcity.tool.sonar-qube-scanner.DEFAULT%" />
+        </parameters>
+      </runner>
+      <runner id="RUNNER_3" name="" type="Maven2">
+        <parameters>
+          <param name="goals" value="clean test" />
+          <param name="localRepoScope" value="agent" />
+          <param name="maven.path" value="%teamcity.tool.maven.DEFAULT%" />
+          <param name="pomLocation" value="pom.xml" />
+          <param name="runnerArgs" value="-Dmaven.test.failure.ignore=true" />
+          <param name="teamcity.step.mode" value="default" />
+          <param name="userSettingsSelection" value="userSettingsSelection:default" />
         </parameters>
       </runner>
     </build-runners>
