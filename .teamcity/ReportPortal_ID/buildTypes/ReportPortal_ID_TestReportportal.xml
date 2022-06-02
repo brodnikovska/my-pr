@@ -31,6 +31,17 @@
           <param name="userSettingsSelection" value="userSettingsSelection:default" />
         </parameters>
       </runner>
+      <runner id="RUNNER_2" name="" type="sonar-plugin">
+        <parameters>
+          <param name="sonarProjectKey" value="%teamcity.project.id%" />
+          <param name="sonarProjectName" value="%system.teamcity.projectName%" />
+          <param name="sonarProjectSources" value="src" />
+          <param name="sonarProjectVersion" value="%build.number%" />
+          <param name="sonarServer" value="b616beb7-afb3-457b-b0a6-ec225fe39538" />
+          <param name="teamcity.step.mode" value="default" />
+          <param name="teamcity.tool.sonarquberunner" value="%teamcity.tool.sonar-qube-scanner.DEFAULT%" />
+        </parameters>
+      </runner>
     </build-runners>
     <vcs-settings>
       <vcs-entry-ref root-id="MyPr_ID" />
