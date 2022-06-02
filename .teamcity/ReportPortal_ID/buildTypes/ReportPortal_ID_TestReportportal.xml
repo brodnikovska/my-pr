@@ -33,14 +33,13 @@
           <param name="cronExpression_year" value="*" />
           <param name="dayOfWeek" value="Sunday" />
           <param name="enableQueueOptimization" value="true" />
-          <param name="hour" value="2" />
-          <param name="minute" value="20" />
+          <param name="hour" value="15" />
+          <param name="minute" value="55" />
           <param name="promoteWatchedBuild" value="true" />
           <param name="revisionRule" value="lastFinished" />
           <param name="revisionRuleBuildBranch" value="+:&lt;default&gt;" />
           <param name="schedulingPolicy" value="daily" />
           <param name="timezone" value="Europe/Zagreb" />
-          <param name="triggerBuildWithPendingChangesOnly" value="true" />
         </parameters>
       </build-trigger>
       <build-trigger id="TRIGGER_4" type="vcsTrigger">
