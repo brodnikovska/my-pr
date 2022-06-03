@@ -25,6 +25,7 @@
       </runner>
       <runner id="RUNNER_2" name="" type="sonar-plugin">
         <parameters>
+          <param name="sonarProjectBinaries" value="target/classes" />
           <param name="sonarProjectKey" value="%teamcity.project.id%" />
           <param name="sonarProjectName" value="%system.teamcity.projectName%" />
           <param name="sonarProjectSources" value="src" />
