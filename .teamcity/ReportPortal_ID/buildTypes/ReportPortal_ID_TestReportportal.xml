@@ -28,7 +28,7 @@
           <param name="sonarProjectVersion" value="%build.number%" />
           <param name="sonarServer" value="b616beb7-afb3-457b-b0a6-ec225fe39538" />
           <param name="teamcity.step.mode" value="default" />
-          <param name="teamcity.tool.sonarquberunner" value="%teamcity.tool.sonar-qube-scanner.DEFAULT%" />
+          <param name="teamcity.tool.sonarquberunner" value="%teamcity.tool.sonar-qube-scanner.3.4.0.1729-scanner%" />
         </parameters>
       </runner>
       <runner id="RUNNER_3" name="" type="Maven2">
