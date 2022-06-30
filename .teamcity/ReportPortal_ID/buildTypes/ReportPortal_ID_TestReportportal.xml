@@ -23,6 +23,16 @@
           <param name="userSettingsSelection" value="userSettingsSelection:default" />
         </parameters>
       </runner>
+      <runner id="RUNNER_4" name="" type="DockerCommand">
+        <parameters>
+          <param name="command.args" value="--pull" />
+          <param name="docker.command.type" value="build" />
+          <param name="docker.push.remove.image" value="true" />
+          <param name="dockerfile.path" value="%build.counter%" />
+          <param name="dockerfile.source" value="PATH" />
+          <param name="teamcity.step.mode" value="default" />
+        </parameters>
+      </runner>
       <runner id="RUNNER_2" name="" type="sonar-plugin">
         <parameters>
           <param name="sonarProjectBinaries" value="target/classes" />
@@ -44,16 +54,6 @@
           <param name="runnerArgs" value="-Dmaven.test.failure.ignore=true" />
           <param name="teamcity.step.mode" value="default" />
           <param name="userSettingsSelection" value="userSettingsSelection:default" />
-        </parameters>
-      </runner>
-      <runner id="RUNNER_4" name="" type="DockerCommand">
-        <parameters>
-          <param name="command.args" value="--pull" />
-          <param name="docker.command.type" value="build" />
-          <param name="docker.push.remove.image" value="true" />
-          <param name="dockerfile.path" value="%build.counter%" />
-          <param name="dockerfile.source" value="PATH" />
-          <param name="teamcity.step.mode" value="default" />
         </parameters>
       </runner>
     </build-runners>
