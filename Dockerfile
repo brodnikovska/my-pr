@@ -1,4 +1,4 @@
-FROM maven:3.8.5-jdk-11
+FROM maven:3.8.5-jdk-8
 
 # Google Chrome
 
@@ -24,4 +24,4 @@ RUN wget -q -O /tmp/chromedriver.zip https://chromedriver.storage.googleapis.com
 # RUN mkdir -p /opt/app
 # WORKDIR /opt/app
 # COPY . /opt/app
-CMD ["mvn" "clean", "test"]
+CMD ["mvn", "clean", "test"]
