@@ -3,6 +3,9 @@
   <name>Test_Reportportal</name>
   <description />
   <settings>
+    <options>
+      <option name="artifactRules" value="target =&gt; target" />
+    </options>
     <parameters />
     <build-runners>
       <runner id="RUNNER_1" name="" type="Maven2">
@@ -20,15 +23,26 @@
           <param name="userSettingsSelection" value="userSettingsSelection:default" />
         </parameters>
       </runner>
+      <runner id="RUNNER_4" name="" type="DockerCommand">
+        <parameters>
+          <param name="command.args" value="--pull" />
+          <param name="docker.command.type" value="build" />
+          <param name="docker.push.remove.image" value="true" />
+          <param name="dockerfile.path" value="%build.counter%" />
+          <param name="dockerfile.source" value="PATH" />
+          <param name="teamcity.step.mode" value="default" />
+        </parameters>
+      </runner>
       <runner id="RUNNER_2" name="" type="sonar-plugin">
         <parameters>
+          <param name="sonarProjectBinaries" value="target/classes" />
           <param name="sonarProjectKey" value="%teamcity.project.id%" />
           <param name="sonarProjectName" value="%system.teamcity.projectName%" />
           <param name="sonarProjectSources" value="src" />
           <param name="sonarProjectVersion" value="%build.number%" />
-          <param name="sonarServer" value="b2b29f97-af29-4ecf-a063-542791ee94c6" />
+          <param name="sonarServer" value="b616beb7-afb3-457b-b0a6-ec225fe39538" />
           <param name="teamcity.step.mode" value="default" />
-          <param name="teamcity.tool.sonarquberunner" value="%teamcity.tool.sonar-qube-scanner.DEFAULT%" />
+          <param name="teamcity.tool.sonarquberunner" value="%teamcity.tool.sonar-qube-scanner.3.4.0.1729-scanner%" />
         </parameters>
       </runner>
       <runner id="RUNNER_3" name="" type="Maven2">
