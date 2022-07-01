@@ -28,7 +28,7 @@
           <param name="command.args" value="--pull" />
           <param name="docker.command.type" value="build" />
           <param name="docker.push.remove.image" value="true" />
-          <param name="dockerfile.path" value="%build.counter%" />
+          <param name="dockerfile.path" value="Dockerfile" />
           <param name="dockerfile.source" value="PATH" />
           <param name="teamcity.step.mode" value="default" />
         </parameters>
