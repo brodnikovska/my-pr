@@ -1,0 +1,31 @@
+{
+  "contentParameters":{
+    "contentFields":[
+      "name",
+      "number",
+      "status",
+      "statistics$executions$total",
+      "statistics$executions$passed",
+      "statistics$executions$failed",
+      "statistics$executions$skipped",
+      "statistics$defects$product_bug$pb001",
+      "statistics$defects$automation_bug$ab001",
+      "statistics$defects$system_issue$si001",
+      "statistics$defects$to_investigate$ti001"],
+    "itemsCount":5,
+    "widgetOptions":{
+    }
+  },
+  "description":"My awesome test widget",
+  "owner":"default",
+  "share":true,
+  "name":"New test %s widget",
+  "widgetType":"launchesTable",
+  "filters":[
+    {
+      "value":"1",
+      "name":"DEMO_FILTER"
+    }],
+  "filterIds":[
+    "1"]
+}

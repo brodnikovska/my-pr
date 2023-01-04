@@ -7,23 +7,30 @@ import java.util.Properties;
 
 public class PropertyController {
     public static final String COMMON = "environment/common.properties";
+    public static final String REPORTPORTAL = "reportportal.properties";
     public static final String LOCAL = "environment/local.properties";
     public static final String WEB = "environment/web.properties";
 
     @SneakyThrows
     public static String getPropertyByKey(final String key) {
-        final Properties properties = new Properties();
-        InputStream inputStream;
-        inputStream = Thread.currentThread().getContextClassLoader()
+        final Properties properties1 = new Properties();
+        final Properties properties2 = new Properties();
+        InputStream inputStreamFromCommon, inputStreamFromReportportal;
+        inputStreamFromCommon = Thread.currentThread().getContextClassLoader()
                 .getResourceAsStream(COMMON);
-        properties.load(inputStream);
-        if (properties.containsKey(key)) {
+        inputStreamFromReportportal = Thread.currentThread().getContextClassLoader()
+                .getResourceAsStream(REPORTPORTAL);
+        properties1.load(inputStreamFromCommon);
+        properties2.load(inputStreamFromReportportal);
+        if (properties1.containsKey(key)) {
 
+        } else if (properties2.containsKey(key)) {
+            return properties2.getProperty(key);
         } else {
-            inputStream = Thread.currentThread().getContextClassLoader()
+            inputStreamFromCommon = Thread.currentThread().getContextClassLoader()
                     .getResourceAsStream(LOCAL);
-            properties.load(inputStream);
+            properties1.load(inputStreamFromCommon);
         }
-        return properties.getProperty(key);
+        return properties1.getProperty(key);
     }
 }
