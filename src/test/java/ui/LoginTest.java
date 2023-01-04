@@ -1,3 +1,5 @@
+package ui;
+
 import beans.User;
 import com.epam.reportportal.junit5.ReportPortalExtension;
 import utils.PropertyController;

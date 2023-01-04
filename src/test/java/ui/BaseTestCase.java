@@ -1,3 +1,5 @@
+package ui;
+
 import com.codeborne.selenide.Configuration;
 import com.codeborne.selenide.WebDriverRunner;
 import com.epam.reportportal.junit5.ReportPortalExtension;
