@@ -83,7 +83,6 @@
           <param name="revisionRuleBuildBranch" value="+:&lt;default&gt;" />
           <param name="schedulingPolicy" value="daily" />
           <param name="timezone" value="Europe/Bucharest" />
-          <param name="triggerBuildWithPendingChangesOnly" value="true" />
         </parameters>
       </build-trigger>
       <build-trigger id="TRIGGER_4" type="vcsTrigger">
