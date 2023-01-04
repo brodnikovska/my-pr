@@ -1,7 +1,7 @@
 import com.codeborne.selenide.Configuration;
 import com.codeborne.selenide.WebDriverRunner;
 import com.epam.reportportal.junit5.ReportPortalExtension;
-import core.PropertyController;
+import utils.PropertyController;
 import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.extension.ExtendWith;

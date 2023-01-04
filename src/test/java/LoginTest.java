@@ -1,7 +1,7 @@
 import beans.User;
 import com.epam.reportportal.junit5.ReportPortalExtension;
-import core.PropertyController;
-import core.StringHelper;
+import utils.PropertyController;
+import utils.StringHelper;
 import org.junit.jupiter.api.Order;
 import org.junit.jupiter.api.extension.ExtendWith;
 import org.junit.jupiter.params.ParameterizedTest;
@@ -15,7 +15,7 @@ import static com.codeborne.selenide.Selenide.page;
 import static org.junit.jupiter.params.provider.Arguments.arguments;
 
 @ExtendWith(ReportPortalExtension.class)
-public class TestLogin extends BaseTestCase {
+public class LoginTest extends BaseTestCase {
 
 
     private static Stream<Arguments> validDefaultCredentials() {
