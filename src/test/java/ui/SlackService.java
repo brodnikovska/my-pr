@@ -1,12 +1,13 @@
-package utils;
+package ui;
 
 import com.github.seratch.jslack.Slack;
 import com.github.seratch.jslack.api.webhook.Payload;
 import com.github.seratch.jslack.api.webhook.WebhookResponse;
+import org.testng.TestListenerAdapter;
 
 import java.io.IOException;
 
-public abstract class SlackService{
+public class SlackService {
     private static final String SLACK_URL = "https://hooks.slack.com/services/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";
 
     public void postNotification(String message) {
