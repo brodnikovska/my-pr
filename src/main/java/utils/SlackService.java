@@ -1,4 +1,4 @@
-package ui;
+package utils;
 
 import com.github.seratch.jslack.Slack;
 import com.github.seratch.jslack.api.webhook.Payload;

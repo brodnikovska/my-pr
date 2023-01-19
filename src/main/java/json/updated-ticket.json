@@ -1,53 +1,5 @@
 {
-  "update":{
-    "summary":[
-      {
-        "set":"Test login function"
-      }],
-    "labels":[
-      {
-        "add":"triaged"
-      },
-      {
-        "remove":"blocker"
-      }]
-  },
-  "fields":{
-    "customfield_10000":"This is a shorthand for a set operation on a text custom field"
-  },
-  "historyMetadata":{
-    "type":"myplugin:type",
-    "description":"text description",
-    "descriptionKey":"plugin.changereason.i18.key",
-    "activityDescription":"text description",
-    "activityDescriptionKey":"plugin.activity.i18.key",
-    "actor":{
-      "id":"tony",
-      "displayName":"Tony",
-      "type":"mysystem-user",
-      "avatarUrl":"http://mysystem/avatar/tony.jpg",
-      "url":"http://mysystem/users/tony"
-    },
-    "generator":{
-      "id":"mysystem-1",
-      "type":"mysystem-application"
-    },
-    "cause":{
-      "id":"myevent",
-      "type":"mysystem-event"
-    },
-    "extraData":{
-      "keyvalue":"extra data",
-      "goes":"here"
-    }
-  },
-  "properties":[
-    {
-      "key":"key1",
-      "value":"can be set at issue create or update time"
-    },
-    {
-      "key":"key2",
-      "value":"there can be multiple properties"
-    }]
+  "transition": {
+    "id": "%s"
+  }
 }
