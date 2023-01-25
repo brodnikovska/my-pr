@@ -1,4 +1,4 @@
-package utils;
+package services;
 
 import io.qameta.allure.Step;
 import org.apache.commons.text.RandomStringGenerator;

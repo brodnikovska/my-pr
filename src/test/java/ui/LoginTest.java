@@ -2,8 +2,8 @@ package ui;
 
 import beans.User;
 import com.epam.reportportal.junit5.ReportPortalExtension;
-import utils.PropertyController;
-import utils.StringHelper;
+import services.PropertyController;
+import services.StringHelper;
 import org.junit.jupiter.api.Order;
 import org.junit.jupiter.api.extension.ExtendWith;
 import org.junit.jupiter.params.ParameterizedTest;

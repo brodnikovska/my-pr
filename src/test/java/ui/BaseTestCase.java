@@ -3,12 +3,12 @@ package ui;
 import com.codeborne.selenide.Configuration;
 import com.codeborne.selenide.WebDriverRunner;
 import com.epam.reportportal.junit5.ReportPortalExtension;
-import utils.JiraService;
-import utils.PropertyController;
+import services.JiraService;
+import services.PropertyController;
 import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.extension.ExtendWith;
-import utils.SlackService;
+import services.SlackService;
 
 import static com.codeborne.selenide.Selenide.open;
 

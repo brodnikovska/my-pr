@@ -1,9 +1,8 @@
-package utils;
+package services;
 
 import com.github.seratch.jslack.Slack;
 import com.github.seratch.jslack.api.webhook.Payload;
 import com.github.seratch.jslack.api.webhook.WebhookResponse;
-import org.testng.TestListenerAdapter;
 
 import java.io.IOException;
 

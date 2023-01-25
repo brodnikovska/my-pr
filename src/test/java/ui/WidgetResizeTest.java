@@ -12,7 +12,7 @@ import org.junit.jupiter.api.extension.ExtendWith;
 import pageobjects.DashboardsPage;
 import pageobjects.LeftSidePanel;
 import pageobjects.LoginPage;
-import utils.PropertyController;
+import services.PropertyController;
 
 import static com.codeborne.selenide.Selenide.page;
 
